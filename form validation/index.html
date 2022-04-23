@@ -72,12 +72,12 @@
             //fname
             var fname = document.forms['registerForm']['firstName'].value;
             if (fname.length > 10) {
-                seterror("fname", "Fist name is too long");
+                seterror("fname", "First name is too long");
                 returnval = false;
             }
 
             if (fname.length == 0) {
-                seterror("fname", "First name Field cannot be left blank");
+                seterror("fname", "First name Field can't be left blank");
                 returnval = false;
             }
 
@@ -89,7 +89,7 @@
             }
 
             if (lname.length == 0) {
-                seterror("lname", "Last name Field cannot be left blank");
+                seterror("lname", "Last name Field can't be left blank");
                 returnval = false;
             }
 
@@ -103,7 +103,7 @@
             //userContact
             var phonenumber = document.forms['registerForm']['userContact'].value;
             if (phonenumber.length != 11) {
-                seterror("contactnumber", "Phone number should be 11 digits");
+                seterror("contactnumber", "Phone number should be 11 digits long");
                 returnval = false;
             }
      
